@@ -3,7 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Ice Cream Pastel Portfolio Theme - All colors MUST be HSL */
 
 @layer base {
   :root {
