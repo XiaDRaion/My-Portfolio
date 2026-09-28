@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
-import { Moon, Sun } from 'lucide-react';
+import { Github, Instagram, Moon, Sun } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isDark, setIsDark] = useState(false);
@@ -35,36 +36,37 @@ const Navbar = () => {
     <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border shadow-soft">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 rounded-full bg-gradient-strawberry flex items-center justify-center">
-              <span className="text-lg">🍦</span>
-            </div>
-            <h1 className="text-xl font-bold bg-gradient-strawberry bg-clip-text text-transparent">
-              Adinda Salsabila's Portfolio
-            </h1>
-          </div>
-
           <div className="hidden md:flex items-center space-x-8">
-            <button 
-              onClick={() => scrollToSection('welcome')}
+            <button
+              onClick={() => scrollToSection("welcome")}
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
               Home
             </button>
-            <button 
-              onClick={() => scrollToSection('projects')}
-              className="text-foreground hover:text-primary transition-colors font-medium"
-            >
-              Projects
-            </button>
-            <button 
-              onClick={() => scrollToSection('about')}
+
+            <button
+              onClick={() => scrollToSection("about")}
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
               About
             </button>
-            <button 
-              onClick={() => scrollToSection('games')}
+
+            <button
+              onClick={() => scrollToSection("projects")}
+              className="text-foreground hover:text-primary transition-colors font-medium"
+            >
+              Software
+            </button>
+
+            <button
+              onClick={() => scrollToSection("projects")}
+              className="text-foreground hover:text-primary transition-colors font-medium"
+            >
+              Hardware
+            </button>
+
+            <button
+              onClick={() => scrollToSection("games")}
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
               Games
@@ -72,6 +74,29 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center space-x-4">
+
+            <Button
+            variant='ghost'
+            className='rounded-full hover:bg-primary/10'
+            asChild>
+              <a href='https://instagram.com/chacasta_staria' target='blank'>
+              <Instagram className='text-primary'/>
+              </a>
+            </Button>
+
+
+
+
+            <Button
+              variant="ghost"
+              size="icon"
+              className='rounded-full hover:bg-primary/10'
+              asChild>
+                <a href='https://github.com/xiadraion' target='blank'>
+                <Github className='h-10 w-10 text-primary'/>
+                </a>
+              </Button>
+
             <Button
               variant="ghost"
               size="icon"
