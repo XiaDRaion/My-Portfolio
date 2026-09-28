@@ -30,9 +30,9 @@ const Welcome = () => {
       className="section-strawberry relative overflow-hidden"
     >
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen">
+        <div className="grid lg:grid-cols-3 gap-12 items-center min-h-screen">
           {/* Left Content */}
-          <div className="space-y-8 animate-fade-in-up">
+          <div className="lg:col-span-2 space-y-8 animate-fade-in-up">
             <div className="space-y-4">
               <p
                 className="text-lg font-medium text-muted-foreground animate-fade-in-up"
@@ -44,23 +44,19 @@ const Welcome = () => {
                 className="text-6xl lg:text-7xl font-bold text-foreground leading-tight animate-fade-in-up"
                 style={{ animationDelay: "0.4s" }}
               >
-                Adinda
-                <span className="block bg-gradient-vanilla bg-clip-text text-transparent drip-effect">
-                  Salsabila's
-                </span>
+                Adinda{" "}Salsabila's
                 <span className="block text-primary">Portfolio</span>
               </h1>
               <p
-                className="text-xl text-muted-foreground max-w-lg animate-fade-in-up"
+                className="text-xl text-muted-foreground animate-fade-in-up"
                 style={{ animationDelay: "0.6s" }}
               >
-                Crafting delightful digital experiences with a sprinkle of
-                creativity and a whole lot of passion!
+                A whole lot of passion. Carpe diem. Live, Laugh, Love!🌻
               </p>
             </div>
 
             <div
-              className="flex flex-col sm:flex-row gah-4 animate-fade-in-up"
+              className="flex flex-col sm:flex-row gap-4 animate-fade-in-up"
               style={{ animationDelay: "0.8s" }}
             >
               <Button
@@ -95,18 +91,11 @@ const Welcome = () => {
                   Years Experience
                 </div>
               </div>
-              <div className="w-px h-12 bg-border"></div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-primary">100%</div>
-                <div className="text-sm text-muted-foreground">
-                  Sweet Satisfaction
-                </div>
-              </div>
             </div>
           </div>
 
           {/* Right Content - Hero Image */}
-          <div className="relative animate-slide-in-right">
+          <div className="lg:col-span-1 relative animate-slide-in-right">
             <div className="relative rounded-3xl overflow-hidden shadow-float">
               <img
                 src={heroImage}
