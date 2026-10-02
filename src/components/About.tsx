@@ -4,10 +4,10 @@ import { Card, CardContent } from '@/components/ui/card';
 import iceCreamFloat1 from '@/assets/ice-cream-float-1.png';
 
 const skills = [
-  { name: "Frontend Development", level: 95, icon: Code, color: "bg-ice-cream-strawberry" },
-  { name: "UI/UX Design", level: 88, icon: Palette, color: "bg-ice-cream-vanilla" },
-  { name: "Creative Problem Solving", level: 92, icon: Heart, color: "bg-ice-cream-mint" },
-  { name: "Coffee Drinking", level: 100, icon: Coffee, color: "bg-ice-cream-lavender" }
+  { name: "FUllstack Web Development", icon: Code, color: "bg-ice-cream-strawberry" },
+  { name: "Fullstack Android Development", icon: Palette, color: "bg-ice-cream-vanilla" },
+  { name: "Internet of Things", icon: Heart, color: "bg-ice-cream-mint" },
+  { name: "Machine Learning", icon: Coffee, color: "bg-ice-cream-lavender" }
 ];
 
 const About = () => {
@@ -106,16 +106,8 @@ const About = () => {
                           </div>
                           <span className="font-medium text-foreground">{skill.name}</span>
                         </div>
-                        <span className="text-sm font-medium text-muted-foreground">
-                          {skill.level}%
-                        </span>
                       </div>
                       <div className="w-full bg-white/40 rounded-full h-3 overflow-hidden">
-                        <div 
-                          className={`skill-progress h-full ${skill.color} transition-all duration-1000 ease-out`}
-                          data-width={`${skill.level}%`}
-                          style={{ width: '0%' }}
-                        />
                       </div>
                     </div>
                   );
