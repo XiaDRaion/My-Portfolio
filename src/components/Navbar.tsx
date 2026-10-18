@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Github, Instagram, Moon, Sun } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isDark, setIsDark] = useState(false);
