@@ -59,7 +59,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-6">
+            {/* <div className="grid grid-cols-2 gap-6">
               <Card className="bg-white/60 backdrop-blur-sm border-0 shadow-soft hover:shadow-dreamy transition-all duration-300">
                 <CardContent className="p-6 text-center">
                   <div className="text-3xl font-bold text-primary mb-2">3+</div>
@@ -96,7 +96,7 @@ const About = () => {
                   </div>
                 </CardContent>
               </Card>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Content - Skills */}
