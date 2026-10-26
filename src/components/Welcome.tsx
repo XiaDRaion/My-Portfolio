@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
-import heroImage from '@/assets/hero-ice-cream.png';
+import heroImage from '@/assets/hero.png';
 import iceCreamFloat1 from '@/assets/ice-cream-float-1.png';
 import iceCreamFloat2 from '@/assets/ice-cream-float-2.png';
 
@@ -29,84 +29,43 @@ const Welcome = () => {
       id="welcome"
       className="section-strawberry relative overflow-hidden"
     >
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="grid lg:grid-cols-3 gap-12 items-center min-h-screen">
-          {/* Left Content */}
-          <div className="lg:col-span-2 space-y-8 animate-fade-in-up">
-            <div className="space-y-4">
-              <p
-                className="text-lg font-medium text-muted-foreground animate-fade-in-up"
-                style={{ animationDelay: "0.2s" }}
-              >
-                Welcome to my sweet world! 🍦
-              </p>
-              <h1
-                className="text-6xl lg:text-7xl font-bold text-foreground leading-tight animate-fade-in-up"
-                style={{ animationDelay: "0.4s" }}
-              >
-                Adinda{" "}Salsabila's
-                <span className="block text-primary">Portfolio</span>
-              </h1>
-              <p
-                className="text-xl text-muted-foreground animate-fade-in-up"
-                style={{ animationDelay: "0.6s" }}
-              >
-                A whole lot of passion. Carpe diem. Live, Laugh, Love!🌻
-              </p>
-            </div>
+      <section
+        className="relative min-h-screen bg-cover bg-center flex items-center justify-center"
+        style={{ backgroundImage: `url(${heroImage})` }}
+      >
+        {/* Centered Content */}
+        <div className="relative z-10 container mx-auto px-6 text-center space-y-8 animate-fade-in-up">
+          <p className="text-lg font-medium text-foreground">
+            Welcome to my sweet world! 🍦
+          </p>
 
-            <div
-              className="flex flex-col sm:flex-row gap-4 animate-fade-in-up"
-              style={{ animationDelay: "0.8s" }}
+          <h1 className="text-5xl md:text-7xl font-bold text-foreground leading-tight">
+            Adinda Salsabila's
+            <span className="block text-primary">Portfolio</span>
+          </h1>
+
+          <p className="text-lg md:text-xl text-foreground/90">
+            A whole lot of passion. Carpe diem. Live, Laugh, Love! 🌻
+          </p>
+
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Button
+              onClick={scrollToProjects}
+              className="btn-vanilla text-lg px-8 py-4"
             >
-              <Button
-                onClick={scrollToProjects}
-                className="btn-vanilla text-lg px-8 py-4"
-              >
-                View My Work
-                <ArrowDown className="ml-2 h-5 w-5" />
-              </Button>
-              <Button
-                variant="outline"
-                className="text-lg px-8 py-4 border-2 border-foreground/20 hover:border-primary hover:bg-primary/10"
-              >
-                Get In Touch
-              </Button>
-            </div>
+              View My Work
+              <ArrowDown className="ml-2 h-5 w-5" />
+            </Button>
 
-            <div
-              className="flex items-center space-x-6 animate-fade-in-up"
-              style={{ animationDelay: "1s" }}
+            <Button
+              variant="outline"
+              className="text-lg px-8 py-4 border-2 border-white/50 text-white hover:bg-white/20"
             >
-              <div className="text-center">
-                <div className="text-2xl font-bold text-primary">20+</div>
-                <div className="text-sm text-muted-foreground">
-                  Sweet Projects
-                </div>
-              </div>
-              <div className="w-px h-12 bg-border"></div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-primary">3+</div>
-                <div className="text-sm text-muted-foreground">
-                  Years Experience
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Right Content - Hero Image */}
-          <div className="lg:col-span-1 relative animate-slide-in-right">
-            <div className="relative rounded-3xl overflow-hidden shadow-float">
-              <img
-                src={heroImage}
-                alt="Ice cream themed hero image"
-                className="w-max-80 h-max-90 object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent"></div>
-            </div>
+              Get In Touch
+            </Button>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Floating Ice Cream Elements */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
