@@ -197,17 +197,17 @@ const ProjectCarousel = () => {
       </div>
 
       {/* Ice Cream Melt Effect */}
-      <div className="melt-overlay"></div>
+      {/* <div className="melt-overlay"></div>
       <div className="melt-drops">
         <div className="melt-drop"></div>
         <div className="melt-drop"></div>
         <div className="melt-drop"></div>
         <div className="melt-drop"></div>
-      </div>
+      </div> */}
 
       {/* Floating Melt Elements */}
-      <div className="floating-melt" style={{ top: '20%', right: '10%', animationDelay: '1s' }}></div>
-      <div className="floating-melt" style={{ bottom: '40%', left: '15%', animationDelay: '3s' }}></div>
+      {/* <div className="floating-melt" style={{ top: '20%', right: '10%', animationDelay: '1s' }}></div>
+      <div className="floating-melt" style={{ bottom: '40%', left: '15%', animationDelay: '3s' }}></div> */}
     </section>
   );
 };

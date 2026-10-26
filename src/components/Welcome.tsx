@@ -25,10 +25,7 @@ const Welcome = () => {
   };
 
   return (
-    <section
-      id="welcome"
-      className="section-strawberry relative overflow-hidden"
-    >
+    <section id="welcome">
       <section
         className="relative min-h-screen bg-cover bg-center flex items-center justify-center"
         style={{ backgroundImage: `url(${heroImage})` }}
@@ -112,16 +109,16 @@ const Welcome = () => {
       </div>
 
       {/* Ice Cream Melt Effect */}
-      <div className="melt-overlay"></div>
+      {/* <div className="melt-overlay"></div>
       <div className="melt-drops">
         <div className="melt-drop"></div>
         <div className="melt-drop"></div>
         <div className="melt-drop"></div>
         <div className="melt-drop"></div>
-      </div>
+      </div> */}
 
       {/* Floating Melt Elements */}
-      <div
+      {/* <div
         className="floating-melt"
         style={{ top: "15%", left: "10%", animationDelay: "0s" }}
       ></div>
@@ -132,7 +129,7 @@ const Welcome = () => {
       <div
         className="floating-melt"
         style={{ bottom: "30%", left: "20%", animationDelay: "4s" }}
-      ></div>
+      ></div> */}
     </section>
   );
 };

@@ -154,17 +154,17 @@ const Games = () => {
       </div>
 
       {/* Ice Cream Melt Effect */}
-      <div className="melt-overlay"></div>
+      {/* <div className="melt-overlay"></div>
       <div className="melt-drops">
         <div className="melt-drop"></div>
         <div className="melt-drop"></div>
         <div className="melt-drop"></div>
         <div className="melt-drop"></div>
-      </div>
+      </div> */}
 
       {/* Floating Melt Elements */}
-      <div className="floating-melt" style={{ top: '10%', right: '5%', animationDelay: '0.5s' }}></div>
-      <div className="floating-melt" style={{ bottom: '35%', left: '10%', animationDelay: '3.5s' }}></div>
+      {/* <div className="floating-melt" style={{ top: '10%', right: '5%', animationDelay: '0.5s' }}></div>
+      <div className="floating-melt" style={{ bottom: '35%', left: '10%', animationDelay: '3.5s' }}></div> */}
     </section>
   );
 };

@@ -154,24 +154,24 @@ const About = () => {
         </div>
       </div>
 
-      {/* Ice Cream Melt Effect */}
+      {/* Ice Cream Melt Effect
       <div className="melt-overlay"></div>
       <div className="melt-drops">
         <div className="melt-drop"></div>
         <div className="melt-drop"></div>
         <div className="melt-drop"></div>
         <div className="melt-drop"></div>
-      </div>
+      </div> */}
 
       {/* Floating Melt Elements */}
-      <div
+      {/* <div
         className="floating-melt"
         style={{ top: "30%", left: "5%", animationDelay: "2s" }}
       ></div>
       <div
         className="floating-melt"
         style={{ bottom: "20%", right: "20%", animationDelay: "4s" }}
-      ></div>
+      ></div> */}
     </section>
   );
 };
