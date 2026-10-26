@@ -1,5 +1,4 @@
 import { useEffect, useRef } from 'react';
-import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
 import heroImage from '@/assets/hero.png';
 import iceCreamFloat1 from '@/assets/ice-cream-float-1.png';
@@ -42,25 +41,8 @@ const Welcome = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-foreground/90">
-            A whole lot of passion. Carpe diem. Live, Laugh, Love! 🌻
+            Carpe diem.<br></br> Live, Laugh, Love! 🌻
           </p>
-
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button
-              onClick={scrollToProjects}
-              className="btn-vanilla text-lg px-8 py-4"
-            >
-              View My Work
-              <ArrowDown className="ml-2 h-5 w-5" />
-            </Button>
-
-            <Button
-              variant="outline"
-              className="text-lg px-8 py-4 border-2 border-white/50 text-white hover:bg-white/20"
-            >
-              Get In Touch
-            </Button>
-          </div>
         </div>
       </section>
 
