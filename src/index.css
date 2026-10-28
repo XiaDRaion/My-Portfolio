@@ -260,11 +260,15 @@
     height: 100px;
     background: linear-gradient(45deg, 
       hsl(var(--strawberry-cream)) 0%, 
-      hsl(var(--vanilla-cream)) 25%, 
-      hsl(var(--mint-cream)) 50%, 
-      hsl(var(--lavender-cream)) 75%, 
-      hsl(var(--peach-cream)) 100%);
+      hsl(var(--vanilla-cream)) 30%, 
+      hsl(var(--lavender-cream)) 60%, 
+      hsl(var(--peach-cream)) 90%);
     overflow: hidden;
+  }
+
+  .first-divider {
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    background: var(--primary);
   }
 
   .section-divider::before {

@@ -4,6 +4,7 @@ import ProjectCarousel from '@/components/ProjectCarousel';
 import About from '@/components/About';
 import Games from '@/components/Games';
 import SectionDivider from '@/components/SectionDivider';
+import FirstDivider from '@/components/FirstDivider';
 
 const Index = () => {
   return (
@@ -11,7 +12,7 @@ const Index = () => {
       <Navbar />
       <main>
         <Welcome />
-        <SectionDivider />
+        <FirstDivider />
         <ProjectCarousel />
         <SectionDivider />
         <About />
