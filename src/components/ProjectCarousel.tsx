@@ -84,7 +84,7 @@ const ProjectCarousel = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-5xl font-bold text-foreground mb-6">
-            Sweet <span className="bg-gradient-mint bg-clip-text text-transparent">Projects</span>
+            My <span className="bg-gradient-mint bg-clip-text text-transparent">Projects</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             A collection of delightful projects crafted with love, creativity, and a sprinkle of magic ✨
