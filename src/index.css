@@ -179,6 +179,11 @@
     @apply bg-gradient-to-br from-[hsl(var(--vanilla-cream))] to-[hsl(var(--peach-cream))] min-h-screen py-20;
   }
 
+  .section-green {
+    @apply min-h-screen py-20;
+    background-color: #BFC599;
+  }
+
   .section-mint {
     @apply bg-gradient-to-br from-[hsl(var(--mint-cream))] to-[hsl(var(--secondary))] min-h-screen py-20;
   }
