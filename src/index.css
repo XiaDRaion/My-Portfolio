@@ -273,7 +273,8 @@
 
   .first-divider {
     border-radius: 0 0 50% 50% / 0 0 100% 100%;
-    background: var(--primary);
+    background: #BFC599;
+    margin-bottom: 60px;
   }
 
   .section-divider::before {
