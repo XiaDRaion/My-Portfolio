@@ -179,6 +179,11 @@
     @apply bg-gradient-to-br from-[hsl(var(--vanilla-cream))] to-[hsl(var(--peach-cream))] min-h-screen py-20;
   }
 
+  .section-green {
+    @apply min-h-screen py-20;
+    background-color: #BFC599;
+  }
+
   .section-mint {
     @apply bg-gradient-to-br from-[hsl(var(--mint-cream))] to-[hsl(var(--secondary))] min-h-screen py-20;
   }
@@ -260,11 +265,15 @@
     height: 100px;
     background: linear-gradient(45deg, 
       hsl(var(--strawberry-cream)) 0%, 
-      hsl(var(--vanilla-cream)) 25%, 
-      hsl(var(--mint-cream)) 50%, 
-      hsl(var(--lavender-cream)) 75%, 
-      hsl(var(--peach-cream)) 100%);
+      hsl(var(--vanilla-cream)) 30%, 
+      hsl(var(--lavender-cream)) 60%, 
+      hsl(var(--peach-cream)) 90%);
     overflow: hidden;
+  }
+
+  .first-divider {
+    background: #BFC599;
+    margin-bottom: 60px;
   }
 
   .section-divider::before {
