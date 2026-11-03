@@ -72,7 +72,7 @@ const projects = [
     description:
       "Developed LearnLoop, a Laravel-based RESTful API assessment system integrating OpenAI and DeepSeek for automated question generation and answer key creation. Implemented authentication, role-based access control, examination management, anti-cheating mechanisms, automated grading, and psychometric analytics, with React frontend integration.",
     image:
-      "thesis.png",
+      "/projects/thesis.png",
     tags: ["Laravel", "Assesment System", "React.js", "MySQL"],
     liveUrl: undefined,
     githubUrl: undefined,
