@@ -98,7 +98,7 @@ const ProjectCarousel = () => {
               className="flex transition-transform duration-700 ease-out"
               style={{ transform: `translateX(-${currentProject * 100}%)` }}
             >
-              {projects.map((project, index) => (
+              {projects.map((project) => (
                 <div key={project.id} className="w-full flex-shrink-0">
                   <Card className="border-0 shadow-none bg-white/60 backdrop-blur-sm">
                     <div className="grid md:grid-cols-2 gap-0">
