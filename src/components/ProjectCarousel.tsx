@@ -16,52 +16,85 @@ const projects = [
     description:
       "A desktop-based attendance management system featuring facial recognition for automated identity verification and attendance recording.",
     image: "/projects/face-recognition.png",
-    tags: ["Python", "Tkinter", "Computer Vision"],
+    tags: ["Web Development", "Tourism Platform", "UI/UX"],
     liveUrl: undefined,
     githubUrl:
       "https://github.com/XiaDRaion/Face-Recognition-Attendance-System",
   },
   {
     id: 2,
-    title: "Ice Cream Recipe App",
-    description:
-      "Mobile app for creating and sharing homemade ice cream recipes",
-    image:
-      "https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?w=600&h=400&fit=crop",
-    tags: ["React Native", "Redux", "Firebase"],
-    liveUrl: undefined,
-    githubUrl: undefined,
+    title: "Desa Kunjir Tourism Website",
+    description: "Tourism Website to introduce the beauty of the village",
+    image: "/projects/kunjir.png",
+    tags: ["Laravel", "Blade", "Landing Page"],
+    liveUrl: "https://wisatakunjir.com/",
+    githubUrl: "https://github.com/XiaDRaion/Website_Wisata_Desa_Kunjir",
   },
   {
     id: 3,
-    title: "Pastel Design System",
-    description: "Comprehensive design system with beautiful pastel components",
-    image:
-      "https://images.unsplash.com/photo-1541746972996-4e0b0f93e586?w=600&h=400&fit=crop",
-    tags: ["Storybook", "CSS", "Design Tokens"],
-    liveUrl: undefined,
+    title: "QDT Consulting — Fullstack Web Developer",
+    description:
+      "Developed and maintained fullstack web applications using React, TypeScript, and Supabase. Worked on authentication, database management, real-time features, Xendit payment integration, and content management through Sanity CMS. Also contributed to AI-powered document processing, automated content workflows, and third-party service integrations.",
+    image: "/projects/qdt.png",
+    tags: [
+      "Fullstack Web Dev",
+      "Node.js",
+      "Company",
+      "Supabase",
+      "AI Integration",
+    ],
+    liveUrl: "https://qdtconsultingid.com",
     githubUrl: undefined,
   },
   {
     id: 4,
-    title: "Sweet Analytics Dashboard",
+    title: "Okediil Service Company - Fullstack Web Dev",
     description:
-      "Beautiful data visualization dashboard with smooth animations",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-    tags: ["Vue.js", "D3.js", "Chart.js"],
-    liveUrl: undefined,
+      "Developed fullstack application features using Laravel and React, focusing on backend development, RESTful API implementation, database management, and business logic. Integrated Laravel backend services with a React frontend, implementing application functionality, authentication, and data communication between frontend and backend systems.",
+    image: "/projects/okediil.png",
+    tags: ["Company", "Laravel", "React", "Management System", "Accounting"],
+    liveUrl: "https://service-okediil.com/",
     githubUrl: undefined,
   },
   {
     id: 5,
-    title: "Dreamy Portfolio Template",
-    description: "Customizable portfolio template with ice cream theme",
+    title: "ChemVision: AR Chemistry",
+    description:
+      "ChemVision is an educational mobile application powered by Augmented Reality (AR) to help students visualize chemical elements in 3D. It bridges the gap between abstract chemical concepts and tangible learning by displaying stunning 3D models of real-world elements using marker-based AR technology.",
+    image: "/projects/chemvision.png",
+    tags: ["Android", "C#", "Unity", "Fuvoria"],
+    liveUrl: "https://github.com/XiaDRaion/ChemVision-AR/releases",
+    githubUrl: "https://github.com/XiaDRaion/ChemVision-AR",
+  },
+  {
+    id: 6,
+    title: "LearnLoop - Backend Development",
+    description:
+      "Developed LearnLoop, a Laravel-based RESTful API assessment system integrating OpenAI and DeepSeek for automated question generation and answer key creation. Implemented authentication, role-based access control, examination management, anti-cheating mechanisms, automated grading, and psychometric analytics, with React frontend integration.",
     image:
-      "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=600&h=400&fit=crop",
-    tags: ["Next.js", "Framer Motion", "SCSS"],
+      "thesis.png",
+    tags: ["Laravel", "Assesment System", "React.js", "MySQL"],
     liveUrl: undefined,
     githubUrl: undefined,
+  },
+  {
+    id: 7,
+    title: "QR Code Generator",
+    description:
+      "Generate customizable QR with pastel design. This tool include generate and decoding QR.",
+    image: "/projects/qr.png",
+    tags: ["HTML", "CSS", "QR"],
+    liveUrl: undefined,
+    githubUrl: "https://github.com/XiaDRaion/QR-Code-Generator-and-Decoder",
+  },
+  {
+    id: 8,
+    title: "Mandarin Learning Center",
+    description: "Learning center for mandaring private lesson",
+    image: "/projects/mandarin.png",
+    tags: ["UI/UX", "React", "Learning Website"],
+    liveUrl: undefined,
+    githubUrl: "https://github.com/XiaDRaion/Mandarin-Learning-Center",
   },
 ];
 
