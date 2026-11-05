@@ -152,13 +152,13 @@ const ProjectCarousel = () => {
               {projects.map((project) => (
                 <div key={project.id} className="w-full flex-shrink-0">
                   <Card className="border-0 shadow-none bg-white/60 backdrop-blur-sm">
-                    <div className="grid md:grid-cols-2 gap-0">
+                    <div className="grid min-h-[32rem] md:grid-cols-2 gap-0">
                       {/* Project Image */}
-                      <div className="relative overflow-hidden">
+                      <div className="relative h-96 overflow-hidden md:h-auto">
                         <img
                           src={project.image}
                           alt={project.title}
-                          className="w-full h-96 md:h-full object-cover transition-transform duration-700 hover:scale-105"
+                          className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                       </div>
