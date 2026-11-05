@@ -152,9 +152,9 @@ const ProjectCarousel = () => {
               {projects.map((project) => (
                 <div key={project.id} className="w-full flex-shrink-0">
                   <Card className="border-0 shadow-none bg-white/60 backdrop-blur-sm">
-                    <div className="grid min-h-[32rem] md:grid-cols-2 gap-0">
+                    <div className="grid min-h-[36rem] md:grid-cols-3 gap-0">
                       {/* Project Image */}
-                      <div className="relative h-96 overflow-hidden md:h-auto">
+                      <div className="relative col-span-2 h-96 overflow-hidden md:h-auto">
                         <img
                           src={project.image}
                           alt={project.title}
