@@ -11,18 +11,18 @@ import {
 
 const projects = [
   {
-    id: 1,
+    id: 3,
     title: "Face Recognition Attendance System",
     description:
       "A desktop-based attendance management system featuring facial recognition for automated identity verification and attendance recording.",
     image: "/projects/face-recognition.png",
-    tags: ["Web Development", "Tourism Platform", "UI/UX"],
+    tags: ["Python", "Computer Vision", "Attendance System"],
     liveUrl: undefined,
     githubUrl:
       "https://github.com/XiaDRaion/Face-Recognition-Attendance-System",
   },
   {
-    id: 2,
+    id: 1,
     title: "Desa Kunjir Tourism Website",
     description: "Tourism Website to introduce the beauty of the village",
     image: "/projects/kunjir.png",
@@ -31,7 +31,7 @@ const projects = [
     githubUrl: "https://github.com/XiaDRaion/Website_Wisata_Desa_Kunjir",
   },
   {
-    id: 3,
+    id: 2,
     title: "QDT Consulting — Fullstack Web Developer",
     description:
       "Developed and maintained fullstack web applications using React, TypeScript, and Supabase. Worked on authentication, database management, real-time features, Xendit payment integration, and content management through Sanity CMS. Also contributed to AI-powered document processing, automated content workflows, and third-party service integrations.",
@@ -152,13 +152,13 @@ const ProjectCarousel = () => {
               {projects.map((project) => (
                 <div key={project.id} className="w-full flex-shrink-0">
                   <Card className="border-0 shadow-none bg-white/60 backdrop-blur-sm">
-                    <div className="grid md:grid-cols-2 gap-0">
+                    <div className="grid min-h-[36rem] md:grid-cols-3 gap-0">
                       {/* Project Image */}
-                      <div className="relative overflow-hidden">
+                      <div className="relative col-span-2 h-96 overflow-hidden md:h-auto">
                         <img
                           src={project.image}
                           alt={project.title}
-                          className="w-full h-96 md:h-full object-cover transition-transform duration-700 hover:scale-105"
+                          className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                       </div>
